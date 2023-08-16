@@ -1,0 +1,16 @@
+salario = float(input('Qual é  salário do funcionário? R$'))
+
+if salario > 1250:
+    print(f'Quem ganhava R${salario:.2f} passa a ganhar R${(salario + (salario * 0.10)):.2f}')
+else:
+    print(f'Quem ganhava R${salario:.2f} passa a ganhar R${(salario + (salario * 0.15)):.2f}')
+
+salario = float(input('Qual é  salário do funcionário? R$'))
+
+# outra forma de fazer
+
+if salario <= 1250:
+    novo = salario + ( salario * 0.15)
+else:
+    novo = salario + ( salario * 0.10)
+print(f'Quem ganhava R${salario:.2f} passa a ganhar R${novo:.2f}')
